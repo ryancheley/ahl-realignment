@@ -5,7 +5,7 @@ st.set_page_config(layout="wide")
 
 st.title('AHL Teams')
 
-DIVISONS = ['Pacific', 'Central', 'North', 'Atlantic']
+DIVISONS = ['Pacific', 'Central', 'Atlantic', 'North']
 
 DIVISON_COLORS = { 
     DIVISONS[0]: '#5177bc',
@@ -48,7 +48,7 @@ df = pd.DataFrame(
 
         ['Grand Rapids Griffins', 42.959501, -85.664532, DIVISONS[central_division], DIVISON_COLORS.get(DIVISONS[central_division]), DIVISON_COLORS.get(DIVISONS[1])],
 
-        # North Division
+        # Atlantic Division
         ['Bridgeport Islanders', 41.177035, -73.187452, DIVISONS[2], DIVISON_COLORS.get(DIVISONS[2]), DIVISON_COLORS.get(DIVISONS[2])],
         ['Charlotte Checkers', 35.225144, -80.839236, DIVISONS[2], DIVISON_COLORS.get(DIVISONS[2]), DIVISON_COLORS.get(DIVISONS[2])],
         ['Hartford Wolf Pack', 41.763705, -72.674299, DIVISONS[2], DIVISON_COLORS.get(DIVISONS[2]), DIVISON_COLORS.get(DIVISONS[2])],
@@ -59,7 +59,7 @@ df = pd.DataFrame(
         ['Wilkes-Barre/Scranton Penguins', 41.269160, -75.887936, DIVISONS[2], DIVISON_COLORS.get(DIVISONS[2]), DIVISON_COLORS.get(DIVISONS[2])],
 
 
-        # Atlantic Division
+        # North Division
         ['Bellville Senators', 44.162758, -77.383231, DIVISONS[3], DIVISON_COLORS.get(DIVISONS[3]), DIVISON_COLORS.get(DIVISONS[3])],
         ['Cleveland Monsters', 41.496577, -81.688076, DIVISONS[3], DIVISON_COLORS.get(DIVISONS[3]), DIVISON_COLORS.get(DIVISONS[3])],
         ['Laval Rocket', 45.561642, -73.555493, DIVISONS[3], DIVISON_COLORS.get(DIVISONS[3]), DIVISON_COLORS.get(DIVISONS[3])],
