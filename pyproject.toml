@@ -1,0 +1,14 @@
+[project]
+name = "ahl-realignment"
+version = "0.1.0"
+description = "A visualization of a potential AHL realignment, built with Streamlit"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "folium",
+    "numpy",
+    "pandas",
+    "streamlit",
+    "timezonefinder",
+    "watchdog",
+]
